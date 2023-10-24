@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Basic UI Elements"
+        android:textSize="20dp" />
+
+
+    <RadioGroup
+        android:id="@+id/rgColors"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yellow" />
+
+        <RadioButton
+            android:id="@+id/rbRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red" />
+
+        <RadioButton
+            android:id="@+id/rbBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layoutLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgColors"
+        android:layout_centerHorizontal="true">
+
+        <CheckBox
+            android:id="@+id/cbApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple" />
+
+        <CheckBox
+            android:id="@+id/cbBanana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banana" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutLinear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:onClick="onButtonOneClicked"
+        android:text="Botão Um" />
+
+    <Button
+        android:id="@+id/buttonTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonOne"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Botão Dois" />
+
+    <Button
+        android:id="@+id/buttonThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Botão Três" />
+
+    <Button
+        android:id="@+id/buttonSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:onClick="onButtonSixClicked"
+        android:text="Botão Seis" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonThree"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Change me" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:progress="40" />
+
+
+        <TextView
+            android:id="@+id/txtSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose vehicle:"
+            android:layout_below="@id/progressbar"/>
+        <Spinner
+            android:layout_below="@id/txtSpinner"
+            android:id="@+id/spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtObs"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch1" />
+
+    </RelativeLayout>
+</RelativeLayout>
